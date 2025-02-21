@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+    
+    <title>Clínica Veterinaria Altamar</title>
+</head>
+<body>
+    <header>
+        <h1>Clínica Veterinaria Altamar</h1>
+    </header>
+
+    <div class="container">
+        <h2>Bienvenidos a nuestra clínica veterinaria</h2>
+        <p>Contamos con servicios multidisciplinares para el cuidado de tu mascota.</p>
+        <p>Especialistas en nutricion BARF</p>
+        <p>Servicio de fisioterapia</p>
+        <p>Servicio de Urgencias 24h todos los dias del año</p>
+        <p>Resonancia y Tac + diagnóstico en menos de 36h</p>
+    </div>
+
+    <div class="container">
+        <button id="greetingButton">Mostrar Saludo</button>
+        <p id="message" style="display:none;">¡Hola! Gracias por visitar nuestra clínica veterinaria.</p>
+    </div>
+
+    <div class="form-container">
+        <h3>Formulario de contacto</h3>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div id="user-data">
+        <!-- Aquí se mostrarán los datos ingresados en el formulario -->
+    </div>
+
+    <!-- Nuevo div con la clase actor_list, inicialmente oculto -->
+    <div class="actor_list" style="display:none;">
+        <h3>Lista de Veterinarios de guardia</h3>
+        <p>Toni Troitiño <br> Natividad Hermida <br>Monse Bolena</p>
+    </div>
+
+    <!-- Botón para mostrar u ocultar el div actor_list -->
+    <button id="toggleActorListButton">Mostrar Veterinarios de guardia</button>
+
+    <!-- Nueva sección "Nuestras clínicas por el mundo" -->
+    <div id="worldClinics">
+        <h2>Paises donde estamos presentes</h2>
+        <button id="fetchCountriesButton">Mostrar países</button>
+        <ul id="countriesList">
+            <!-- La lista de países se insertará aquí mediante AJAX -->
+        </ul>
+    </div>
+
+</body>
+</html>
+
+
